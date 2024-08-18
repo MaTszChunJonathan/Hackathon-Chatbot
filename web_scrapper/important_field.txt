@@ -1,0 +1,1 @@
+["context", "partnerName", "popularity", "brand", "priceBeforeDiscount", "price", "rating", "availability", "designFor_en", "catchLine_en", "productNature_en", "name_en", "categoriesUrl_en", "colorName_en"]
