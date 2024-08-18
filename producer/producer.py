@@ -138,7 +138,7 @@ try:
             print("DATA SOURCE END")
             break
 
-        print(hits)
+        
 
         hits_ls.extend(hits)
         

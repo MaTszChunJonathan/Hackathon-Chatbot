@@ -13,7 +13,7 @@ interface Flight {
   price: number
 }
 
-interface ListFlightsProps {
+interface ListTopTenEquipProps {
   summary: {
     arrivalCity: string
     departingCity: string
@@ -23,7 +23,7 @@ interface ListFlightsProps {
   }
 }
 
-export const ListFlights = ({
+export const ListTopTenEquip = ({
   summary = {
     arrivalCity: 'San Francisco',
     departingCity: 'New York City',
@@ -31,7 +31,7 @@ export const ListFlights = ({
     departingAirport: 'JFK',
     date: '2021-12-25'
   }
-}: ListFlightsProps) => {
+}: ListTopTenEquipProps) => {
   const { arrivalCity, departingCity, arrivalAirport, departingAirport, date } =
     summary
   const { submitUserMessage } = useActions()
@@ -40,21 +40,22 @@ export const ListFlights = ({
   const flights = [
     {
       id: 1,
-      airlines: 'United Airlines',
-      departureTime: '8:30 PM',
-      arrivalTime: '4:20 PM+1',
-      price: 531
+      product_name: '',
+      
+      product_vendor:'',
+      product_provider:'',
+      price: 499 
     },
     {
       id: 2,
-      airlines: 'United Airlines',
+      product_name: 'United Airlines',
       departureTime: '2:40 PM',
       arrivalTime: '10:25 AM+1',
       price: 564
     },
     {
       id: 3,
-      airlines: 'United Airlines',
+      product_name: 'United Airlines',
       departureTime: '3:00 PM',
       arrivalTime: '10:50 AM+1',
       price: 611
@@ -85,7 +86,7 @@ export const ListFlights = ({
               className="flex cursor-pointer flex-row items-start sm:items-center gap-4 rounded-xl p-2 hover:bg-zinc-50"
               onClick={async () => {
                 const response = await submitUserMessage(
-                  `The user has selected flight ${flight.airlines}, departing at ${flight.departureTime} and arriving at ${flight.arrivalTime} for $${flight.price}. Now proceeding to select seats.`
+                  `The user has selected flight ${flight.product_name}, departing at ${flight.departureTime} and arriving at ${flight.arrivalTime} for $${flight.price}. Now proceeding to select seats.`
                 )
                 setMessages((currentMessages: any[]) => [
                   ...currentMessages,
@@ -105,7 +106,7 @@ export const ListFlights = ({
                   <div className="font-medium">
                     {flight.departureTime} - {flight.arrivalTime}
                   </div>
-                  <div className="text-sm text-zinc-600">{flight.airlines}</div>
+                  <div className="text-sm text-zinc-600">{flight.product_name}</div>
                 </div>
                 <div>
                   <div className="font-medium">

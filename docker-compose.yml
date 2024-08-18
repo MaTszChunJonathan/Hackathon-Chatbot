@@ -39,6 +39,13 @@ services:
       - /app/node_modules
     environment:
       - NODE_ENV=development
+      - AUTH_SECRET=b03d1449d339b7c90700e236a66a859e
+      - GOOGLE_GENERATIVE_AI_API_KEY=AIzaSyB2P2_zzbqvx1BUYVqDRBp0F0w9gqThihY
+      - KV_REST_API_READ_ONLY_TOKEN=ArkhAAIgcDEcaiOtZpnX1Zu6TEVNu-w-nZciQT2XBJKkatTf2ynefQ
+      - KV_REST_API_TOKEN=AbkhAAIjcDFmZTY5MDVjMWQ3Zjg0MzFjYjEwZTgyNGYwZDJhZThiM3AxMA
+      - KV_REST_API_URL=https://precious-octopus-47393.upstash.io
+      - KV_URL=redis://default:AbkhAAIjcDFmZTY5MDVjMWQ3Zjg0MzFjYjEwZTgyNGYwZDJhZThiM3AxMA@precious-octopus-47393.upstash.io:6379
+
 #    command: pnpm dev
   zookeeper-1:
     image: wurstmeister/zookeeper
