@@ -1,6 +1,3 @@
-Here’s a basic README template for your sports gear recommender system, which is designed to be run using Docker:
- 
----
  
 # Sports Gear Recommender System
  
@@ -85,9 +82,5 @@ We welcome contributions to improve the Sports Gear Recommender System. Feel fre
  
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
  
----
- 
-This README provides a concise and clear guide for users to set up and run your sports gear recommender system using Docker. Make sure to replace placeholder URLs and ports with actual values relevant to your project.
-Docker Desktop: The #1 Containerization Tool for Developers | Docker
-Docker Desktop is collaborative containerization software for developers. Get started and download Docker Desktop today on Mac, Windows, or Linux.
+
  
