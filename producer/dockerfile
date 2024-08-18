@@ -1,0 +1,26 @@
+FROM python:3.12
+
+WORKDIR /producer
+
+COPY producer.py /producer/producer.py
+
+#COPY wait-for-it.sh /producer/wait-for-it.sh
+COPY wait-for-kafka-topic.sh /producer/
+RUN chmod +x /producer/wait-for-kafka-topic.sh
+
+RUN pip install git+https://github.com/dpkp/kafka-python.git
+
+RUN pip install kafka-python
+
+RUN pip install bs4
+
+RUN pip install requests
+
+RUN pip install masquer
+
+#RUN chmod +x /producer/wait-for-it.sh
+
+#ENTRYPOINT ["./wait-for-it.sh", "mongodb:27017", "--", "python", "producer.py"] 
+
+#ENTRYPOINT ["./wait-for-kafka-topic.sh", "kafka-1", "9092", "test-topic", "python", "producer.py"]
+CMD ["python", "producer.py"]

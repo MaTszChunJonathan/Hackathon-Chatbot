@@ -1,0 +1,18 @@
+FROM python:3.12
+
+WORKDIR /consumer
+
+COPY consumer.py /consumer/consumer.py
+#COPY wait-for-it.sh /consumer/wait-for-it.sh
+
+RUN pip install git+https://github.com/dpkp/kafka-python.git
+
+RUN pip install kafka-python
+
+RUN pip install pymongo
+
+#RUN chmod +x /consumer/wait-for-it.sh
+
+#ENTRYPOINT ["./wait-for-it.sh", "mongodb:27017", "--", "python", "consumer.py"] 
+
+CMD ["python", "consumer.py"]
