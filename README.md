@@ -58,7 +58,7 @@ This command will start the application and all its dependencies in Docker conta
  
 ### Step 4: Access the Application
  
-After running the Docker containers, you can access the Sports Gear Recommender System by navigating to `http://localhost:your-port` in your web browser. Replace `your-port` with the port specified in the `docker-compose.yml` file.
+After running the Docker containers, you can access the Sports Gear Recommender System by navigating to `http://localhost:3000` in your web browser. Replace `your-port` with the port specified in the `docker-compose.yml` file.
  
 ## Stopping the Application
  
