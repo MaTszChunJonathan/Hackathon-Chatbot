@@ -15,11 +15,14 @@ The Sports Gear Recommender System is an application designed to help users find
 - **Diverse Gear Selection:** Covers a wide range of sports and gear types.
 
 - **User-Friendly Interface:** Easy to navigate and use.
+  
+- Vertex AI https://colab.research.google.com/github/GoogleCloudPlatform/generative-ai/blob/main/embeddings/intro-textemb-vectorsearch.ipynb (Embedding and semantic search but Not integrated with the current app,)
  
 ## Prerequisites
  
 - **Docker:** Ensure that Docker is installed on your system. You can download Docker from [here](https://www.docker.com/products/docker-desktop).
- 
+- Setup local environment for Gemini api-key, auth-secrete
+
 ## Getting Started
  
 ### Step 1: Clone the Repository
