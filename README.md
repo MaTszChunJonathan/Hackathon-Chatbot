@@ -21,7 +21,7 @@ The Sports Gear Recommender System is an application designed to help users find
 ## Prerequisites
  
 - **Docker:** Ensure that Docker is installed on your system. You can download Docker from [here](https://www.docker.com/products/docker-desktop).
-- All api-key will expire within three days after this project
+- All api-key are store in docker-compose.yml and will expire within three days after this project for security concern
 
 ## Getting Started
  
