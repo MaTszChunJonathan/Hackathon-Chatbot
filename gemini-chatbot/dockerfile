@@ -9,8 +9,15 @@ COPY ./package.json ./
 #COPY ./package-lock.json ./
 COPY ./pnpm-lock.yaml ./
 
+RUN npm install mongodb
+RUN npm install express
+RUN npm install axios
+RUN npm install cors
+
+
+
 # Install dependencies using pnpm
-RUN npm install -g pnpm && pnpm install
+RUN npm install -g pnpm && pnpm install 
 
 # Copy the rest of the application code
 COPY . .
