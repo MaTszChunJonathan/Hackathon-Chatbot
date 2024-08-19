@@ -38,7 +38,7 @@ async function UserOrLogin() {
         {session?.user ? (
           <UserMenu user={session.user} />
         ) : (
-          <Button variant="link" asChild className="-ml-2">
+          <Button variant="link" asChild className="-ml-2 text-white">
             <Link href="/login">Login</Link>
           </Button>
         )}
@@ -67,15 +67,12 @@ export function Header() {
           </a>
         </Button>
         
-        {/* <Button asChild size="sm" className="rounded-lg gap-1">
-          <a
-            target="_blank"
-          >
-            <IconVercel className="size-3" />
-            <span className="hidden sm:block">Button1</span>
-            <span className="sm:hidden">Deploy</span>
-          </a>
-        </Button> */}
+        <Button asChild size="sm" variant="ghost">
+          <Link href="/new" rel="nofollow"  >
+            <span className="hidden sm:block">Table</span>
+            <span className="sm:hidden">Table</span>
+          </Link>
+        </Button>
       </div>
     </header>
   )
