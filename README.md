@@ -13,7 +13,8 @@ The Sports Gear Recommender System is an application designed to help users find
 
 - **User-Friendly Interface:** Easy to navigate and use.
   
-- Vertex AI https://colab.research.google.com/drive/1Z6aZU1giTCXVpI5UtDyGbRjeWtACaaq4?usp=sharing (Embedding and semantic search but Not integrated with the current app,)
+- Vertex AI Google Collab Notebook (Embedding and vector search for our scraped data but Not integrated with the current web app yet)
+  https://colab.research.google.com/drive/1Z6aZU1giTCXVpI5UtDyGbRjeWtACaaq4?usp=sharing 
  
 ## Prerequisites
  
