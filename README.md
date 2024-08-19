@@ -6,6 +6,8 @@
 The Sports Gear Recommender System is an application designed to help users find the most suitable sports gear based on their preferences and requirements. It leverages LLM from Gemini to analyze user input and recommend personalized gear options by searching from the real-time updated database.
  
 ## Features
+
+- **ALL-IN-ONE** All components are packaged within a docker container, easy to build and run on your local with no dependencies concern (One Remind, Gemini API needs VPN to use, so make sure you use VPN before using the app)
  
 - **Personalized Recommendations:** Get tailored sports gear suggestions based on user preferences.
 
