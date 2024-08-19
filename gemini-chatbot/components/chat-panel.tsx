@@ -49,7 +49,9 @@ export function ChatPanel({
       message: 'List 10 New Arrivals for Sports equipments'
     },
     {
-
+      heading: 'List Random Product',
+      subheading: 'Sports equipment',
+      message: 'List 10 products randomly from the catalog'
     },
     {
       heading: 'List Top Rated',

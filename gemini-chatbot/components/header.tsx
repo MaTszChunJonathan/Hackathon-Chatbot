@@ -49,7 +49,7 @@ async function UserOrLogin() {
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-50 flex items-center justify-between w-full h-16 px-4 shrink-0 bg-gradient-to-b from-background/10 via-background/50 to-background/80 backdrop-blur-xl">
+    <header className="sticky top-0 z-50 flex items-center justify-between w-full h-16 px-4 shrink-0 bg-gray-900 text-white">
       <div className="flex items-center">
         <React.Suspense fallback={<div className="flex-1 overflow-auto" />}>
           <UserOrLogin />
@@ -59,23 +59,23 @@ export function Header() {
         <Button asChild size="sm" variant="ghost">
           <a
             target="_blank"
-            href="https://github.com/vercel-labs/gemini-chatbot" //To-do: Update this link to our repo
+            href="https://github.com/tommyNg0530/Samurai" 
             rel="noopener noreferrer"
           >
             <IconGitHub />
-            <span className="hidden ml-2 md:flex">GitHub</span>
+            <span className="hidden ml-2 md:flex" style={{ fontSize: '1.2rem' }}>SamurAI's GitHub</span>
           </a>
         </Button>
-        <Button asChild size="sm" className="rounded-lg gap-1">
+        
+        {/* <Button asChild size="sm" className="rounded-lg gap-1">
           <a
-            href="https://vercel.com/templates/next.js/gemini-ai-chatbot"
             target="_blank"
           >
             <IconVercel className="size-3" />
             <span className="hidden sm:block">Button1</span>
             <span className="sm:hidden">Deploy</span>
           </a>
-        </Button>
+        </Button> */}
       </div>
     </header>
   )
