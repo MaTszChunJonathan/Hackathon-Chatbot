@@ -7,7 +7,9 @@ The Sports Gear Recommender System is an application designed to help users find
  
 ## Features
 
-- **ALL-IN-ONE** All components are packaged within a docker container, easy to build and run on your local with no dependencies concern (One Remind, Gemini API needs VPN to use, so make sure you use VPN before using the app)
+- **ALL-IN-ONE**
+ - All components are packaged within a docker container, easy to build and run on your local with no dependencies concern
+ - One Remind, Gemini API needs VPN to use, so _make sure you use VPN before using the app_
  
 - **Personalized Recommendations:** Get tailored sports gear suggestions based on user preferences.
 
