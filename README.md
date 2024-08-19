@@ -3,7 +3,7 @@
  
 ## Overview
  
-The Sports Gear Recommender System is an application designed to help users find the most suitable sports gear based on their preferences and requirements. It leverages LLM from Gemini to analyze user input and recommend personalized gear options by searching from real-time updated database.
+The Sports Gear Recommender System is an application designed to help users find the most suitable sports gear based on their preferences and requirements. It leverages LLM from Gemini to analyze user input and recommend personalized gear options by searching from the real-time updated database.
  
 ## Features
  
@@ -15,14 +15,21 @@ The Sports Gear Recommender System is an application designed to help users find
   
 - Vertex AI Google Collab Notebook
   - Embedding and vector search for our scraped data but Not integrated with the current web app yet)
-  - https://colab.research.google.com/drive/1Z6aZU1giTCXVpI5UtDyGbRjeWtACaaq4?usp=sharing 
+  - https://colab.research.google.com/drive/1Z6aZU1giTCXVpI5UtDyGbRjeWtACaaq4?usp=sharing
+
+## File Structure
+
+- Consumer, Producer (Docker-related)
+- Docker-compose.yml (Dependency for all the components to run the app)
+- Gemini-chatbot (WebAPP)
+- Web-scrapper, analysis_dacathlon_data.ipynb (Data scrapping from decathlon)
  
 ## Prerequisites
  
 - **Docker:**
  - Ensure that Docker is installed and run on your system.
  - You can download Docker from [here](https://www.docker.com/products/docker-desktop).
-- All api-key are store in docker-compose.yml and will expire within three days after this project for security concern
+- All API-key are stored in docker-compose.yml and will expire within three days after this project for security concern
 
 ## Getting Started
  
