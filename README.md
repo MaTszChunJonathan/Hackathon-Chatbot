@@ -3,7 +3,7 @@
  
 ## Overview
  
-The Sports Gear Recommender System is an application designed to help users find the most suitable sports gear based on their preferences and requirements. It leverages advanced algorithms to analyze user input and recommend personalized gear options.
+The Sports Gear Recommender System is an application designed to help users find the most suitable sports gear based on their preferences and requirements. It leverages LLM from Gemini to analyze user input and recommend personalized gear options by searching from real-time updated database.
  
 ## Features
  
