@@ -30,14 +30,14 @@ try:
         # Deserialize the message from Kafka
         message_value = message.value.decode('utf-8')
         data = json.loads(message_value)
-        print(data)
+#        print(data)
         # Ensure 'data' is a list of dictionaries
         if isinstance(data, list) and all(isinstance(d, dict) for d in data):
             # Insert the list of dictionaries into MongoDB
             collection.insert_many(data)
-            print(f"Inserted: {data}")
+            print(f"Inserted")
         else:
-            print(f"Unexpected message format: {data}")
+            print(f"Unexpected message format:")
 
 except Exception as e:
     print(f"Failed to insert: {e}")

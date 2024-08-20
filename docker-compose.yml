@@ -103,4 +103,11 @@ services:
 #      MONGO_INITDB_ROOT_USERNAME: admin
 #      MONGO_INITDB_ROOT_PASSWORD: adminpw
     ports: 
-      - '27017:27017'    
+      - '27017:27017'
+  rag:
+    image: rag
+    container_name: rag
+    build:
+      context: ./rag
+    environment:
+      - PYTHONUNBUFFERED=1

@@ -148,8 +148,8 @@ try:
         
 finally:
     # Write the first hit to a JSON file
-    with open('hits.json', 'w') as json_file:
-        json.dump(hits_ls, json_file, indent=4)
+#    with open('hits.json', 'w') as json_file:
+#        json.dump(hits_ls, json_file, indent=4)
     producer.send('test-topic', hits_ls)
     producer.flush()    
     
